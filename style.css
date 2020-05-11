@@ -1,0 +1,152 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main{
+  position: relative;
+  height: 100vh;
+  background: yellow;
+}
+.head{
+  position: absolute;
+  width: 200px;
+  height: 190px;
+  border: 2px solid black;
+  border-radius: 50%;
+  top:30%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+  background: #0e6dbe;
+  z-index: 1;
+}
+.face{
+  width: 170px;
+  height: 160px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -85px;
+}
+.eye1,.eye2{
+  width: 30px;
+  height: 40px;
+  border: 2px solid black;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+}
+.eye1{
+  left: 50%;
+  margin-left: -30px;
+}
+.eye2{
+  left: 50%;
+  margin-left: 0px;
+}
+.eye1ball,.eye2ball{
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 8px;
+}
+.eye1ball{
+  right: 5px;
+}
+.eye2ball{
+  left: 5px;
+}
+.eye1ball::after,.eye2ball::after{
+  content: '';
+  width: 1px;
+  height: 1px;
+  display: block;
+  border: 1px solid white;
+  background: white;
+  border-radius: 50%;
+}
+.nose{
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  margin-left: -10px;
+  background: red;
+}
+.nose::after{
+  content: '';
+  width: 5px;
+  height: 5px;
+  display: block;
+  border: 1px solid white;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  left: 1px;
+}
+.moustache1 div,.moustache2 div{
+  width: 80px;
+  height: 1.5px;
+  background: black;
+  /* border: 1px solid black; */
+  position: absolute;
+}
+.moustache1 div:nth-child(3){
+  top: 65%;
+  left: -10px;
+  transform: rotate(-10deg);
+}
+.moustache1 div:nth-child(2){
+  top: 50%;
+  left: -10px;
+}
+.moustache1 div:nth-child(1){
+  top: 35%;
+  left: -10px;
+  transform: rotate(10deg);
+}
+.moustache2 div:nth-child(3){
+  top: 65%;
+  right: -10px;
+  transform: rotate(10deg);
+}
+.moustache2 div:nth-child(2){
+  top: 50%;
+  right: -10px;
+}
+.moustache2 div:nth-child(1){
+  top: 35%;
+  right: -10px;
+  transform: rotate(-10deg);
+}
+.lip{
+  width: 100px;
+  height: 2px;
+  background: black;
+  /* border: 1px solid black; */
+  position: absolute;
+  transform: rotate(90deg);
+  left: 20%;
+  top: 50%;
+}
+.mouse{
+  height: 300px;
+  width: 150px;
+  border-bottom: 4px solid black;
+  border-radius: 75px;
+  position: absolute;
+  bottom: 27px;
+  left: 10px;
+}
+
